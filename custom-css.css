@@ -1,3 +1,14 @@
 * {
     font-family: Cabin !important;
 }
+.header-logo {
+    max-width: none;
+}
+.grid-bg {
+    background: transparent;
+}
+.page-sidebar,
+.card .card-figure,
+.card-figcaption {
+    border-color: transparent;
+}
