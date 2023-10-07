@@ -4,14 +4,6 @@
 .header-logo {
     max-width: none;
 }
-.grid-bg {
-    background: transparent;
-}
-.page-sidebar,
-.card .card-figure,
-.card-figcaption {
-    border-color: transparent;
-}
 .quickSearchWrap {
     text-align: right;
 }
@@ -23,9 +15,48 @@
     width: 410px;
     max-width: 100%;
 }
+.navPages-action {
+    font-size: 1.25rem;
+}
+.grid-bg {
+    background: transparent;
+}
+.page-sidebar,
+.card .card-figure,
+.card-figcaption {
+    border-color: transparent;
+}
+.sidebarBlock+.sidebarBlock {
+    border-top-color: #ddd;
+}
+.navList-action--checkbox {
+    font-size: 1rem;
+}
+.accordion-navigation {
+    border-color: #ddd;
+}
+.actionBar-section .form-field {
+    border-color: transparent;
+}
+.pagination-item:not(.pagination-item--next):not(.pagination-item--previous) {
+    border-bottom-color: #ddd;
+}
+.card .card-title {
+    font-size: 1rem;
+}
 @media only screen and (min-width: 801px) {
+    .quickSearchResults {
+        left: auto;
+        right: 0;
+    }
+    .navPages-container {
+        border-bottom-color: transparent;
+    }
     .navPage-subMenu {
         padding: 0 !important;
+    }
+    .navPage-subMenu-item:hover {
+        background-color: #f9f9f9;
     }
     .navPage-subMenu .navPages-action:hover:before {
         height: 0;
@@ -33,5 +64,14 @@
     .navPages-list:not(.navPages-list-depth-max) .navPage-subMenu-action {
         padding: 0.75rem 1.5rem;
         width: 100%;
+    }
+    .page-sidebar #subcategoryList h5,
+    .page-sidebar .accordion-block+.accordion-block {
+        border-top-color: #ddd;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .sidebar-nav-mobile>a.is-open {
+        color: #fff !important;
     }
 }
