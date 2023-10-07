@@ -12,3 +12,26 @@
 .card-figcaption {
     border-color: transparent;
 }
+.quickSearchWrap {
+    text-align: right;
+}
+.header-logo .form-field {
+    position: relative;
+    display: inline-block;
+}
+.quickSearchWrap .form-input {
+    width: 410px;
+    max-width: 100%;
+}
+@media only screen and (min-width: 801px) {
+    .navPage-subMenu {
+        padding: 0 !important;
+    }
+    .navPage-subMenu .navPages-action:hover:before {
+        height: 0;
+    }
+    .navPages-list:not(.navPages-list-depth-max) .navPage-subMenu-action {
+        padding: 0.75rem 1.5rem;
+        width: 100%;
+    }
+}
