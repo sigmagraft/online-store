@@ -21,11 +21,19 @@
 .footer-info-col {
     font-size: .875rem;
 }
+.footer-info-list a:hover,
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 footer .socialLinks-item {
     background: #196ab2;
 }
 .grid-bg {
     background: transparent;
+}
+.socialLinks {
+    display: none;
 }
 .accordion-navigation {
     border-color: #ccc;
@@ -38,17 +46,17 @@ footer .socialLinks-item {
 .card-figcaption {
     border-color: transparent;
 }
+.page-sidebar {
+    background: transparent;
+}
 .sidebarBlock-heading {
     font-size: 1rem;
 }
 .sidebarBlock+.sidebarBlock {
-    border-top-color: #ddd;
+    border-top-color: #ccc;
 }
 .navList-action--checkbox {
     font-size: .9375rem;
-}
-.page-sidebar .accordion-navigation {
-    border-color: #ddd;
 }
 .actionBar-section .form-field,
 .actionBar-section .form-field:hover {
@@ -61,7 +69,7 @@ footer .socialLinks-item {
     font-size: 1rem;
 }
 .productView-options-wrap {
-    display: none;
+    display: none !important;
 }
 @media only screen and (min-width: 801px) {
     .quickSearchResults {
@@ -75,7 +83,7 @@ footer .socialLinks-item {
         padding: 0 !important;
     }
     .navPage-subMenu-item:hover {
-        background-color: #f9f9f9;
+        background-color: #f9f9f9 !important;
     }
     .navPage-subMenu .navPages-action:hover:before {
         height: 0;
@@ -84,9 +92,11 @@ footer .socialLinks-item {
         padding: 0.75rem 1.5rem;
         width: 100%;
     }
-    .page-sidebar #subcategoryList h5,
+    .page-sidebar #subcategoryList h5 {
+        border-bottom-color: #ccc;
+    }
     .page-sidebar .accordion-block+.accordion-block {
-        border-top-color: #ddd;
+        border-top-color: #ccc;
     }
     .productView-images {
         max-width: 40%;
@@ -96,7 +106,21 @@ footer .socialLinks-item {
     }
 }
 @media only screen and (max-width: 800px) {
+    .grid-bg .sidebar-nav-mobile {
+        background: transparent;
+    }
+    .sidebar-nav-mobile>a:not(.is-open),
+    .sidebar-nav-mobile>a:not(.is-open):focus,
+    .sidebar-nav-mobile>a:not(.is-open):hover {
+        background: #fff;
+        border-color: transparent;
+    }
     .sidebar-nav-mobile>a.is-open {
         color: #fff !important;
+        border-color: transparent;
     }
+    .accordion .sidebarBlock-heading {
+        border-bottom-color: #ccc;
+    }
+
 }
