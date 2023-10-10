@@ -1,6 +1,10 @@
 * {
     font-family: Cabin !important;
 }
+.body {
+    margin-top: 1rem !important;
+    margin-bottom: 6rem;
+}
 .header-logo {
     max-width: none;
 }
@@ -15,7 +19,7 @@
     width: 410px;
     max-width: 100%;
 }
-.navPages-action.activePage {
+.navPages-action.has-subMenu {
     font-size: 1.25rem;
 }
 .footer-info-col {
