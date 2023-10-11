@@ -18,15 +18,16 @@ h1, h2, h3, h4, h5, h6 {
 .grid-bg {
     background: transparent;
 }
-.socialLinks {
-    display: none;
-}
 .accordion-navigation {
     border-color: #ccc;
 }
 :not(.page-sidebar) .accordion-title {
     font-size: 1rem;
 }
+/*
+------------------------------------------------------------
+HEADER
+------------------------------------------------------------ */
 .header-logo {
     max-width: none;
 }
@@ -44,81 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 .navPages-action.has-subMenu {
     font-size: 1.25rem;
 }
-.footer-info-col {
-    font-size: .875rem;
-}
-.footer-info-list a:hover,
-footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-footer .socialLinks-item {
-    background: #196ab2;
-}
-.home {
-    margin-top: 0 !important;
-}
-.heroCarousel-slide .heroCarousel-image-wrapper {
-    height: auto !important;
-    text-align: center;
-}
-.heroCarousel-slide .heroCarousel-image {
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
-.login-form .form-actions * {
-    vertical-align: middle;
-}
-.page-sidebar,
-.card .card-figure,
-.card-figcaption {
-    border-color: transparent;
-}
-.page-sidebar {
-    background: transparent;
-}
-.sidebarBlock-heading {
-    font-size: 1rem;
-}
-.sidebarBlock+.sidebarBlock {
-    border-top-color: #ccc;
-}
-.navList-action--checkbox {
-    font-size: .9375rem;
-    margin-bottom: 0;
-}
-.navList-action--checkbox::before {
-    border-color: #ccc;
-}
-.actionBar-section .form-field,
-.actionBar-section .form-field:hover {
-    border-color: transparent;
-}
-.pagination-item:not(.pagination-item--next):not(.pagination-item--previous) {
-    border-bottom-color: #ccc;
-}
-.card .card-title {
-    font-size: 1rem;
-}
-.productView-options-wrap {
-    display: none !important;
-}
-.fastCart .whatNext h5 {
-    margin-top: 0;
-    font-size: 1rem;
-    font-style: italic;
-}
-.cart-list,
-.cart-item {
-    border-color: #ccc;
-}
-.cart-item-name {
-    font-size: 1.125rem;
-}
-.cart-total-label {
-    color: #444;
-}
+/*
+Media Query
+------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
     .quickSearchResults {
         left: auto;
@@ -143,6 +72,100 @@ footer .socialLinks-item {
         padding: 0.75rem 1.5rem;
         width: 100%;
     }
+}
+/*
+------------------------------------------------------------
+FOOTER
+------------------------------------------------------------ */
+.footer-info-col {
+    font-size: .875rem;
+}
+.footer-info-list a:hover,
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+footer .socialLinks-item {
+    background: #196ab2;
+}
+/*
+------------------------------------------------------------
+HOMEPAGE
+------------------------------------------------------------ */
+.home {
+    margin-top: 0 !important;
+}
+.heroCarousel-slide .heroCarousel-image-wrapper {
+    display: block;
+    height: auto !important;
+    text-align: center;
+    background-color: #005676;
+}
+.heroCarousel-slide .heroCarousel-image {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+/*
+Media Query
+------------------------------------------------------------ */
+@media only screen and (min-width: 801px) {
+    .heroCarousel-content {
+        background-color: transparent;
+    }
+}
+/*
+------------------------------------------------------------
+LOGIN
+------------------------------------------------------------ */
+.login-form .form-actions * {
+    vertical-align: middle;
+}
+/*
+------------------------------------------------------------
+ALL PRODUCTS
+------------------------------------------------------------ */
+.page-sidebar,
+.card .card-figure,
+.card-figcaption {
+    border-color: transparent;
+}
+/*
+Sidebar
+------------------------------------------------------------ */
+.page-sidebar {
+    background: transparent;
+}
+.sidebarBlock-heading {
+    font-size: 1rem;
+}
+.sidebarBlock+.sidebarBlock {
+    border-top-color: #ccc;
+}
+.navList-action--checkbox {
+    font-size: .9375rem;
+    margin-bottom: 0;
+}
+.navList-action--checkbox::before {
+    border-color: #ccc;
+}
+/*
+Product Cards
+------------------------------------------------------------ */
+.actionBar-section .form-field,
+.actionBar-section .form-field:hover {
+    border-color: transparent;
+}
+.pagination-item:not(.pagination-item--next):not(.pagination-item--previous) {
+    border-bottom-color: #ccc;
+}
+.card .card-title {
+    font-size: 1rem;
+}
+/*
+Media Query
+------------------------------------------------------------ */
+@media only screen and (min-width: 801px) {
     .page-sidebar {
         padding-top: 0;
         padding-left: 0;
@@ -152,12 +175,6 @@ footer .socialLinks-item {
     }
     .page-sidebar .accordion-block+.accordion-block {
         border-top-color: #ccc;
-    }
-    .productView-images {
-        max-width: 40%;
-    }
-    .productView-details {
-        min-width: 60%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -177,4 +194,47 @@ footer .socialLinks-item {
     .accordion .sidebarBlock-heading {
         border-bottom-color: #ccc;
     }
+}
+/*
+------------------------------------------------------------
+INDIVIDUAL PRODUCT
+------------------------------------------------------------ */
+.productView-options-wrap {
+    display: none !important;
+}
+.socialLinks {
+    display: none;
+}
+/*
+Media Query
+------------------------------------------------------------ */
+@media only screen and (min-width: 801px) {
+    .productView-images {
+        max-width: 40%;
+    }
+    .productView-details {
+        min-width: 60%;
+    }
+}
+/*
+------------------------------------------------------------
+CART
+------------------------------------------------------------ */
+.cart-list,
+.cart-item {
+    border-color: #ccc;
+}
+.cart-item-name {
+    font-size: 1.125rem;
+}
+.cart-total-label {
+    color: #444;
+}
+/*
+Add-to-Cart Popup
+------------------------------------------------------------ */
+.fastCart .whatNext h5 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-style: italic;
 }
