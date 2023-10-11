@@ -1,19 +1,19 @@
-body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, data {
+body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, dat {
     font-family: Cabin !important;
 }
-.body {
-    margin-top: 1rem !important;
-    margin-bottom: 6rem;
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    letter-spacing: 0;
 }
 .header-logo {
     max-width: none;
 }
-.quickSearchWrap {
-    text-align: right;
-}
 .header-logo .form-field {
     position: relative;
     display: inline-block;
+}
+.quickSearchWrap {
+    text-align: right;
 }
 .quickSearchWrap .form-input {
     width: 410px;
@@ -33,6 +33,16 @@ footer a:hover {
 footer .socialLinks-item {
     background: #196ab2;
 }
+.body {
+    margin-top: 1rem !important;
+    margin-bottom: 6rem;
+}
+.form-input,
+.form-select,
+.form-checkbox+.form-label::before,
+.form-radio+.form-label::before {
+    border-color: transparent;
+}
 .grid-bg {
     background: transparent;
 }
@@ -44,6 +54,9 @@ footer .socialLinks-item {
 }
 :not(.page-sidebar) .accordion-title {
     font-size: 1rem;
+}
+.login-form .form-actions * {
+    vertical-align: middle;
 }
 .page-sidebar,
 .card .card-figure,
@@ -75,6 +88,17 @@ footer .socialLinks-item {
 .productView-options-wrap {
     display: none !important;
 }
+.fastCart .whatNext h5 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+.cart-item-name {
+    font-size: 1.125rem;
+}
+.cart-total-label {
+    color: #444;
+}
 @media only screen and (min-width: 801px) {
     .quickSearchResults {
         left: auto;
@@ -82,6 +106,9 @@ footer .socialLinks-item {
     }
     .navPages-container {
         border-bottom-color: transparent;
+    }
+    .navPages li.navPages-item:hover>.navPages-action:before {
+        bottom: 15px;
     }
     .navPage-subMenu {
         padding: 0 !important;
