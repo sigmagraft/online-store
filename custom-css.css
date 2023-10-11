@@ -22,17 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 .navPages-action.has-subMenu {
     font-size: 1.25rem;
 }
-.footer-info-col {
-    font-size: .875rem;
-}
-.footer-info-list a:hover,
-footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-footer .socialLinks-item {
-    background: #196ab2;
-}
 .body {
     margin-top: 1rem !important;
     margin-bottom: 6rem;
@@ -54,6 +43,27 @@ footer .socialLinks-item {
 }
 :not(.page-sidebar) .accordion-title {
     font-size: 1rem;
+}
+.footer-info-col {
+    font-size: .875rem;
+}
+.footer-info-list a:hover,
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+footer .socialLinks-item {
+    background: #196ab2;
+}
+.home {
+    margin-top: 0 !important;
+}
+.slick-slide img {
+    width: auto;
+}
+.heroCarousel-slide .heroCarousel-image {
+    width: auto;
+    height: auto;
 }
 .login-form .form-actions * {
     vertical-align: middle;
