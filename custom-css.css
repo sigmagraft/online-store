@@ -5,23 +5,6 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     letter-spacing: 0;
 }
-.header-logo {
-    max-width: none;
-}
-.header-logo .form-field {
-    position: relative;
-    display: inline-block;
-}
-.quickSearchWrap {
-    text-align: right;
-}
-.quickSearchWrap .form-input {
-    width: 410px;
-    max-width: 100%;
-}
-.navPages-action.has-subMenu {
-    font-size: 1.25rem;
-}
 .body {
     margin-top: 1rem !important;
     margin-bottom: 6rem;
@@ -44,6 +27,23 @@ h1, h2, h3, h4, h5, h6 {
 :not(.page-sidebar) .accordion-title {
     font-size: 1rem;
 }
+.header-logo {
+    max-width: none;
+}
+.header-logo .form-field {
+    position: relative;
+    display: inline-block;
+}
+.quickSearchWrap {
+    text-align: right;
+}
+.quickSearchWrap .form-input {
+    width: 410px;
+    max-width: 100%;
+}
+.navPages-action.has-subMenu {
+    font-size: 1.25rem;
+}
 .footer-info-col {
     font-size: .875rem;
 }
@@ -58,12 +58,14 @@ footer .socialLinks-item {
 .home {
     margin-top: 0 !important;
 }
-.slick-slide img {
-    width: auto;
+.heroCarousel-slide .heroCarousel-image-wrapper {
+    height: auto !important;
+    text-align: center;
 }
 .heroCarousel-slide .heroCarousel-image {
     width: auto;
     height: auto;
+    display: inline-block;
 }
 .login-form .form-actions * {
     vertical-align: middle;
@@ -84,6 +86,10 @@ footer .socialLinks-item {
 }
 .navList-action--checkbox {
     font-size: .9375rem;
+    margin-bottom: 0;
+}
+.navList-action--checkbox::before {
+    border-color: #ccc;
 }
 .actionBar-section .form-field,
 .actionBar-section .form-field:hover {
@@ -102,6 +108,10 @@ footer .socialLinks-item {
     margin-top: 0;
     font-size: 1rem;
     font-style: italic;
+}
+.cart-list,
+.cart-item {
+    border-color: #ccc;
 }
 .cart-item-name {
     font-size: 1.125rem;
@@ -132,6 +142,10 @@ footer .socialLinks-item {
     .navPages-list:not(.navPages-list-depth-max) .navPage-subMenu-action {
         padding: 0.75rem 1.5rem;
         width: 100%;
+    }
+    .page-sidebar {
+        padding-top: 0;
+        padding-left: 0;
     }
     .page-sidebar #subcategoryList h5 {
         border-bottom-color: #ccc;
