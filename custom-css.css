@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 :not(.page-sidebar) .accordion-title {
     font-size: 1rem;
 }
+[data-content-region*="header_bottom"] {
+    margin-top: 0 !important;
+}
 /*
 ------------------------------------------------------------
 HEADER
@@ -95,6 +98,9 @@ HOMEPAGE
 .home {
     margin-top: 0 !important;
 }
+/*
+Slider
+------------------------------------------------------------ */
 .heroCarousel-slide .heroCarousel-image-wrapper {
     display: block;
     height: auto !important;
@@ -105,6 +111,13 @@ HOMEPAGE
     width: auto;
     height: auto;
     display: inline-block;
+}
+/*
+Hero Banner
+------------------------------------------------------------ */
+[data-layout-id="5d4c7cd8-ee75-44c0-9680-707a3affda00"] {
+    max-width: 1230px;
+    margin: 0 auto;
 }
 /*
 Media Query
