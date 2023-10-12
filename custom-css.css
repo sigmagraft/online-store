@@ -34,10 +34,6 @@ HEADER
 .header-logo {
     max-width: none;
 }
-.header-logo .form-field {
-    position: relative;
-    display: inline-block;
-}
 .quickSearchWrap {
     text-align: right;
 }
@@ -48,6 +44,10 @@ HEADER
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
+    .header-logo .form-field {
+        position: relative;
+        display: inline-block;
+    }
     .quickSearchWrap .form-input {
         width: 410px;
         max-width: 100%;
@@ -116,23 +116,24 @@ Slider
 Hero Banner
 ------------------------------------------------------------ */
 .go1152403042 {
-    display: block;
+    display: block !important;
 }
 .go671630196 {
-    display: none;
+    display: none !important;
 }
 /*
 Quicklinks
 ------------------------------------------------------------ */
-[data-layout-id="15c73472-353e-4ad4-91f5-c8873c0e4d8f"] {
-    width: 66.66667%;
-}
 /*
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
     .heroCarousel-content {
         background-color: transparent;
+    }
+    [data-layout-id="15c73472-353e-4ad4-91f5-c8873c0e4d8f"] {
+        width: 66.66667%;
+        margin: 0 auto;
     }
 }
 /*
