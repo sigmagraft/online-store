@@ -119,15 +119,27 @@ Hero Banner
     display: none !important;
 }
 /*
+Quicklinks
+------------------------------------------------------------ */
+.quicklink {
+    background-color: #fff;
+    text-align: center;
+}
+.quicklink a {
+    display: block;
+    padding: 1.75rem 1.75rem 0.75rem;
+}
+.quicklink span {
+    display: inline-block;
+    font-size: 1.125rem;
+    padding-top: 0.5rem;
+}
+/*
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
     .heroCarousel-content {
         background-color: transparent;
-    }
-    [data-layout-id="15c73472-353e-4ad4-91f5-c8873c0e4d8f"] {
-        width: 66.66667%;
-        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 800px) {
