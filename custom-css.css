@@ -41,10 +41,6 @@ HEADER
 .quickSearchWrap {
     text-align: right;
 }
-.quickSearchWrap .form-input {
-    width: 410px;
-    max-width: 100%;
-}
 .navPages-action.has-subMenu {
     font-size: 1.25rem;
 }
@@ -52,6 +48,10 @@ HEADER
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
+    .quickSearchWrap .form-input {
+        width: 410px;
+        max-width: 100%;
+    }
     .quickSearchResults {
         left: auto;
         right: 0;
@@ -115,9 +115,17 @@ Slider
 /*
 Hero Banner
 ------------------------------------------------------------ */
-[data-layout-id="5d4c7cd8-ee75-44c0-9680-707a3affda00"] {
-    max-width: 1230px;
-    margin: 0 auto;
+.go1152403042 {
+    display: block;
+}
+.go671630196 {
+    display: none;
+}
+/*
+Quicklinks
+------------------------------------------------------------ */
+[data-layout-id="15c73472-353e-4ad4-91f5-c8873c0e4d8f"] {
+    width: 66.66667%;
 }
 /*
 Media Query
