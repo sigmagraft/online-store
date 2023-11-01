@@ -27,6 +27,14 @@ h1, h2, h3, h4, h5, h6 {
 [data-content-region*="header_bottom"] {
     margin-top: 0 !important;
 }
+.modal-close {
+    top: 0.5rem;
+    right: 0.5rem;
+}
+.modal-close:focus::after,
+.modal-close:focus::before {
+    display: none;
+}
 /*
 ------------------------------------------------------------
 HEADER
@@ -149,10 +157,17 @@ Media Query
 }
 /*
 ------------------------------------------------------------
-LOGIN
+ACCOUNT
 ------------------------------------------------------------ */
 .login-form .form-actions * {
     vertical-align: middle;
+}
+.panel--newAddress .panel-body {
+    background-color: #fff;
+    border: none;
+}
+.paymentMethod .button {
+    display: inline-block;
 }
 /*
 ------------------------------------------------------------
@@ -270,4 +285,12 @@ Add-to-Cart Popup
     margin-top: 0;
     font-size: 1rem;
     font-style: italic;
+}
+/*
+Media Query
+------------------------------------------------------------ */
+@media only screen and (min-width: 801px) {
+    .cart-total + .cart-total {
+        border-top-color: #ccc;
+    }
 }
