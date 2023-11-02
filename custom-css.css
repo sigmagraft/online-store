@@ -107,28 +107,13 @@ HOMEPAGE
     margin-top: 0 !important;
 }
 /*
-Slider
------------------------------------------------------------- */
-.heroCarousel-slide .heroCarousel-image-wrapper {
-    display: block;
-    height: auto !important;
-    text-align: center;
-    background-color: #005676;
-}
-.heroCarousel-slide .heroCarousel-image {
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
-/*
-Hero Banner
------------------------------------------------------------- */
-.go671630196 {
-    display: none !important;
-}
-/*
 Quicklinks
 ------------------------------------------------------------ */
+div[data-layout-id="a46fc82f-1ac7-48c3-814c-476312252133"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
 .quicklink {
     background-color: #fff;
     text-align: center;
