@@ -247,8 +247,14 @@ Media Query
 ------------------------------------------------------------
 INDIVIDUAL PRODUCT
 ------------------------------------------------------------ */
+.productView-options {
+    margin-bottom: 1.5rem;
+}
 .productView-options-wrap {
     display: none !important;
+}
+.productView-options-wrap .productView-options-inner {
+    border-bottom-color: #ccc;
 }
 .socialLinks {
     display: none;
@@ -257,10 +263,12 @@ INDIVIDUAL PRODUCT
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
-    .productView-images {
+    .productView-images,
+    .quickView .productView-images {
         max-width: 40%;
     }
-    .productView-details {
+    .productView-details,
+    .quickView .productView-details {
         min-width: 60%;
     }
 }
