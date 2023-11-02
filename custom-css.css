@@ -107,6 +107,21 @@ HOMEPAGE
     margin-top: 0 !important;
 }
 /*
+Custom Slider
+------------------------------------------------------------ */
+[data-sub-layout="3a09faa3-e259-472d-9bce-409e0679000d"] {
+    padding: 0;
+}
+[data-layout-name="Custom Slider"] .slick-prev {
+    left: 0;
+}
+[data-layout-name="Custom Slider"] .slick-next {
+    right: 0;
+}
+[data-layout-name="Custom Slider"] .slick-slide {
+    min-height: 300px;
+}
+/*
 Quicklinks
 ------------------------------------------------------------ */
 div[data-layout-name="Quicklinks"] {
