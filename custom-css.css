@@ -112,22 +112,37 @@ Custom Slider
 [data-sub-layout="3a09faa3-e259-472d-9bce-409e0679000d"] {
     padding: 0 !important;
 }
-[data-layout-name="Custom Slider"] .slick-prev {
+#custom-slider .slick-prev {
     left: 0;
 }
-[data-layout-name="Custom Slider"] .slick-next {
+#custom-slider .slick-next {
     right: 0;
 }
-[data-layout-name="Custom Slider"] .slick-slide {
-    min-height: 300px;
+#custom-slider .slick-slide {
+    min-height: 400px;
+}
+#custom-slider .slick-slide img {
+    display: inline-block;
+    width: auto;
+}
+#custom-slider .container {
+    display: table;
+}
+#custom-slider .container > div {
+    display: table-cell;
+    vertical-align: middle;
 }
 /*
 Quicklinks
 ------------------------------------------------------------ */
-div[data-layout-name="Quicklinks"] {
+[data-layout-name="Quicklinks"] {
     max-width: 1230px;
     margin: 0 auto;
     padding-top: 40px;
+}
+[data-layout-name="Quicklinks"] > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 .quicklink {
     background-color: #fff;
@@ -146,14 +161,11 @@ div[data-layout-name="Quicklinks"] {
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 801px) {
-    .heroCarousel-content {
-        background-color: transparent;
+    #custom-slider .container > div {
+        width: 50%;
     }
 }
 @media only screen and (max-width: 800px) {
-    .go1152403042 {
-        display: block !important;
-    }
 }
 /*
 ------------------------------------------------------------
