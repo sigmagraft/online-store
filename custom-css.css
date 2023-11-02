@@ -122,7 +122,6 @@ Custom Slider
     min-height: 400px;
 }
 #custom-slider .slick-slide img {
-    display: inline-block;
     width: auto;
 }
 #custom-slider .container {
@@ -133,6 +132,9 @@ Custom Slider
 }
 .custom-slide-right {
     text-align: center;
+}
+.custom-slide-right img {
+    display: inline-block;
 }
 /*
 Quicklinks
@@ -168,7 +170,7 @@ Media Query
         display: table-cell;
     }
     .custom-slide-left img {
-        display: none !important;
+        display: none;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -177,10 +179,10 @@ Media Query
         padding-bottom: 40px;
     }
     .custom-slide-left img {
-        display: block !important;
+        display: block;
     }
     .custom-slide-right img {
-        display: none !important;
+        display: none;
     }
 }
 /*
