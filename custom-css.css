@@ -109,9 +109,6 @@ HOMEPAGE
 
 Custom Slider
 ------------------------------------------------------------ */
-[data-sub-layout="3a09faa3-e259-472d-9bce-409e0679000d"] {
-    padding: 0 !important;
-}
 #custom-slider .slick-prev {
     left: 0;
 }
@@ -143,10 +140,6 @@ Quicklinks
     max-width: 1230px;
     margin: 0 auto;
     padding-top: 40px;
-}
-[data-layout-name="Quicklinks"] > div {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
 }
 .quicklink {
     background-color: #fff;
