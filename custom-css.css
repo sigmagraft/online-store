@@ -106,7 +106,7 @@ HOMEPAGE
 .home {
     margin-top: 0 !important;
 }
-/*
+
 Custom Slider
 ------------------------------------------------------------ */
 [data-sub-layout="3a09faa3-e259-472d-9bce-409e0679000d"] {
@@ -129,8 +129,10 @@ Custom Slider
     display: table;
 }
 #custom-slider .container > div {
-    display: table-cell;
     vertical-align: middle;
+}
+.custom-slide-right {
+    text-align: center;
 }
 /*
 Quicklinks
@@ -163,9 +165,23 @@ Media Query
 @media only screen and (min-width: 801px) {
     #custom-slider .container > div {
         width: 50%;
+        display: table-cell;
+    }
+    .custom-slide-left img {
+        display: none;
     }
 }
 @media only screen and (max-width: 800px) {
+    #custom-slider .slick-slide {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .custom-slide-left img {
+        display: block;
+    }
+    .custom-slide-right img {
+        display: none;
+    }
 }
 /*
 ------------------------------------------------------------
