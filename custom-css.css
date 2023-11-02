@@ -110,7 +110,7 @@ HOMEPAGE
 Custom Slider
 ------------------------------------------------------------ */
 [data-sub-layout="3a09faa3-e259-472d-9bce-409e0679000d"] {
-    padding: 0;
+    padding: 0 !important;
 }
 [data-layout-name="Custom Slider"] .slick-prev {
     left: 0;
