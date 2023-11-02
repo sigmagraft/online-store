@@ -168,7 +168,7 @@ Media Query
         display: table-cell;
     }
     .custom-slide-left img {
-        display: none;
+        display: none !important;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -177,10 +177,10 @@ Media Query
         padding-bottom: 40px;
     }
     .custom-slide-left img {
-        display: block;
+        display: block !important;
     }
     .custom-slide-right img {
-        display: none;
+        display: none !important;
     }
 }
 /*
