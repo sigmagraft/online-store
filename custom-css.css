@@ -146,7 +146,7 @@ Custom Slider
     color: #fff;
 }
 #custom-slide-01 {
-    background-color: #005676;
+    background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slide-01-bg.jpg?t=1699030145) 50% 0%/cover no-repeat;
 }
 #custom-slide-01 ul {
     margin: 0;
