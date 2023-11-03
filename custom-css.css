@@ -310,7 +310,7 @@ INDIVIDUAL PRODUCT
 .productView-options {
     margin-bottom: 1.5rem;
 }
-:not([data-product-id="166"]) .productView-options-wrap,
+.body > :not([data-product-id="166"]) .productView-options-wrap,
 [data-product-id="166"] .productView-options-inner > div:first-of-type {
     display: none !important;
 }
