@@ -114,6 +114,7 @@ Custom Slider
     position: relative;
     background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.jpg?t=1701806322) center/cover no-repeat;
     display: flex;
+    align-items: center;
 }
 .custom-slide::after {
     background-position: center;
@@ -125,10 +126,15 @@ Custom Slider
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332);
+}
+.custom-slide-inner {
+    z-index: 100;
+    width: 100%;
+    padding: 0 2.5rem;
 }
 .custom-slide-text {
-    z-index: 100;
+    max-width: 1230px;
+    margin: 0 auto;
 }
 .custom-slide-text h2 {
     font-size: 3.75rem;
@@ -138,8 +144,12 @@ Custom Slider
 }
 .custom-slide-text h3 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #fff;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 2.5rem;
 }
 .custom-slide-text ul {
     margin: 0;
@@ -149,17 +159,13 @@ Custom Slider
     font-size: 1.3125rem;
     color: #fff;
     font-style: italic;
+    margin-top: 1rem;
 }
 .custom-slide-text img {
     display: inline-block;
-    vertical-align: -4px;
-}
-.custom-slide > img {
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    width: 50%;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 8px;
 }
 /*
 Quicklinks
@@ -185,9 +191,29 @@ Quicklinks
 /*
 Media Query
 ------------------------------------------------------------ */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
+    .custom-slide::after {
+        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332);
+    }
+    .custom-slide-text > * {
+        width: 50%;
+    }
+    .custom-slide-text li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .custom-slide > img {
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        width: 50%;
+    }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+    .custom-slide::after {
+        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bgvert.png?t=1701803332);
+    }
 }
 /*
 ------------------------------------------------------------
