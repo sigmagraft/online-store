@@ -106,60 +106,25 @@ HOMEPAGE
 .home {
     margin-top: 0 !important;
 }
-
+/*
 Custom Slider
 ------------------------------------------------------------ */
-#custom-slider .slick-prev {
-    left: 0;
+.custom-slide {
+    min-height: 500px;
 }
-#custom-slider .slick-next {
-    right: 0;
+.custom-slide img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    width: 50%;
 }
-#custom-slider .slick-slide img {
-    width: auto;
-}
-#custom-slider .container {
-    display: table;
-    min-height: 400px;
-}
-#custom-slider .container > div {
-    vertical-align: middle;
-}
-.custom-slide-left > img {
-    margin-bottom: 2rem;
-}
-.custom-slide-right {
-    text-align: center;
-}
-.custom-slide-right > img {
-    display: inline-block;
-}
-#custom-slider h2 {
-    font-size: 3.75rem;
-    margin: 0;
-    line-height: 1.2;
-    color: #fff;
-}
-#custom-slider h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #fff;
-}
-#custom-slide-01 {
-    background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slide-01-bg.jpg?t=1699030145) 50% 0%/cover no-repeat;
-}
-#custom-slide-01 ul {
-    margin: 0;
-}
-#custom-slide-01 li {
-    list-style-type: none;
-    font-size: 1.3125rem;
-    color: #fff;
-    font-style: italic;
-}
-#custom-slide-01 li img {
-    display: inline-block;
-    vertical-align: -4px;
+.custom-slide::after {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.png?t=1701798714);
 }
 /*
 Quicklinks
