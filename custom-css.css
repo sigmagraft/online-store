@@ -112,7 +112,7 @@ Custom Slider
 .custom-slide {
     min-height: 500px;
     position: relative;
-    background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.jpg?t=1701806322) center/cover no-repeat;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
 }
@@ -130,7 +130,7 @@ Custom Slider
 .custom-slide-inner {
     z-index: 100;
     width: 100%;
-    padding: 0 2.5rem;
+    padding: 2.5rem;
 }
 .custom-slide-text {
     max-width: 1230px;
@@ -192,6 +192,9 @@ Quicklinks
 Media Query
 ------------------------------------------------------------ */
 @media only screen and (min-width: 1001px) {
+    .custom-slide {
+        background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.jpg?t=1701806322) center/cover no-repeat;
+    }
     .custom-slide::after {
         background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332);
     }
@@ -211,8 +214,14 @@ Media Query
     }
 }
 @media only screen and (max-width: 1000px) {
+    .custom-slide {
+        display: grid;
+    }
     .custom-slide::after {
         background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bgvert.png?t=1701803332);
+    }
+    .custom-slide-text {
+        text-align: center;
     }
 }
 /*
