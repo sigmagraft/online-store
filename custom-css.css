@@ -117,9 +117,6 @@ Custom Slider
     align-items: center;
 }
 .custom-slide::after {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     content: '';
     position: absolute;
     top: 0;
@@ -149,7 +146,6 @@ Custom Slider
     font-weight: 400;
     padding-bottom: 1rem;
     border-bottom: 1px solid #ffffff;
-    margin-bottom: 2.5rem;
 }
 .custom-slide-text ul {
     margin: 0;
@@ -196,7 +192,7 @@ Media Query
         background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.jpg?t=1701806322) center/cover no-repeat;
     }
     .custom-slide::after {
-        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332);
+        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332) center/cover no-repeat;
     }
     .custom-slide-text > * {
         width: 50%;
@@ -217,8 +213,11 @@ Media Query
     .custom-slide {
         display: grid;
     }
+    .custom-slide-inner {
+        background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bgvert.png?t=1701819425) 50% 100%/cover no-repeat;
+    }
     .custom-slide::after {
-        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bgvert.png?t=1701803332);
+        background-image: none;
     }
     .custom-slide-text {
         text-align: center;
