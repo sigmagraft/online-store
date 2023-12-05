@@ -112,6 +112,7 @@ Custom Slider
 .custom-slide {
     min-height: 500px;
     position: relative;
+    background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/320w/image-manager/home-slider-bg.jpg?t=1701803330) center/cover no-repeat;
 }
 .custom-slide img {
     height: 100%;
@@ -122,15 +123,15 @@ Custom Slider
 }
 .custom-slide::after {
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.png?t=1701798714);
+    background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/320w/image-manager/home-slider-text-bg.png?t=1701803332);
 }
 /*
 Quicklinks
