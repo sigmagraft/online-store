@@ -192,7 +192,7 @@ Media Query
         background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.jpg?t=1701806322) center/cover no-repeat;
     }
     .custom-slide::after {
-        background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332) center/cover no-repeat;
+        background: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-text-bg.png?t=1701803332) center/cover no-repeat;
     }
     .custom-slide-text > * {
         width: 50%;
