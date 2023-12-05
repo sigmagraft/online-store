@@ -111,6 +111,7 @@ Custom Slider
 ------------------------------------------------------------ */
 .custom-slide {
     min-height: 500px;
+    position: relative;
 }
 .custom-slide img {
     height: 100%;
@@ -124,6 +125,11 @@ Custom Slider
     background-repeat: no-repeat;
     background-size: cover;
     content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: url(//cdn11.bigcommerce.com/s-8aiovneo53/images/stencil/original/image-manager/home-slider-bg.png?t=1701798714);
 }
 /*
