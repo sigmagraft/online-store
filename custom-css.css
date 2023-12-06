@@ -251,6 +251,12 @@ Media Query
     .custom-slide-text {
         text-align: center;
     }
+    .custom-slide-text h2 {
+        font-size: 3rem;
+    }
+    .custom-slide-text h3 {
+        font-size: 1.3125rem;
+    }
 }
 /*
 ------------------------------------------------------------
