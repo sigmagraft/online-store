@@ -124,10 +124,10 @@ Custom Slider
     border-radius: 0;
 }
 .slick-dots li button {
-    border-color: #ddd;
+    border-color: #999;
 }
 .slick-dots li.slick-active button::before {
-    background: #ddd;
+    background: #999;
 }
 .custom-slide {
     min-height: 500px;
