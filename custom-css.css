@@ -126,6 +126,7 @@ Custom Slider
 .slick-dots li button {
     border-color: #999;
 }
+.slick-dots li button:hover::before,
 .slick-dots li.slick-active button::before {
     background: #999;
 }
