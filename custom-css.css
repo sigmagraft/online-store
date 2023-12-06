@@ -109,10 +109,19 @@ HOMEPAGE
 /*
 Custom Slider
 ------------------------------------------------------------ */
+#custom-slider {
+    margin-bottom: 0;
+}
+.slick-dots li button {
+    border-color: #46a397;
+}
+.slick-dots li.slick-active button::before {
+    background: #46a397;
+}
 .custom-slide {
     min-height: 500px;
     position: relative;
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
     align-items: center;
 }
@@ -145,7 +154,7 @@ Custom Slider
     color: #fff;
     font-weight: 400;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #fff;
 }
 .custom-slide-text ul {
     margin: 0;
