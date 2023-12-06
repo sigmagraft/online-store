@@ -112,22 +112,28 @@ Custom Slider
 #custom-slider {
     margin-bottom: 0;
 }
-.slick-dots {
+#custom-slider .slick-dots {
     bottom: 0;
     width: auto;
-    right: 0;
+    right: 4px;
 }
-.slick-dots li {
+#custom-slider .slick-dots li {
+    height: auto;
     width: auto;
+    padding: 0.375rem;
 }
-.slick-dots li button, .slick-dots li button::before {
+#custom-slider .slick-dots li button,
+.slick-dots li button::before {
     border-radius: 0;
 }
-.slick-dots li button {
-    border-color: #999;
+#custom-slider .slick-dots li button {
+    border-color: transparent;
+    background-color: #ddd;
 }
-.slick-dots li button:hover::before,
-.slick-dots li.slick-active button::before {
+#custom-slider .slick-dots li button:hover::before {
+    background: transparent;
+}
+#custom-slider .slick-dots li.slick-active button::before {
     background: #999;
 }
 .custom-slide {
