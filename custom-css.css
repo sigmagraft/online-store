@@ -113,7 +113,7 @@ Custom Slider
     margin-bottom: 0;
 }
 .slick-dots li button {
-    border-color: #46a397;
+    border-color: #999;
 }
 .slick-dots li.slick-active button::before {
     background: #46a397;
