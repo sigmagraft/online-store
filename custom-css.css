@@ -252,10 +252,11 @@ Media Query
         text-align: center;
     }
     .custom-slide-text h2 {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
-    .custom-slide-text h3 {
-        font-size: 1.3125rem;
+    .custom-slide-text h3,
+    .custom-slide-text li {
+        font-size: 1.25rem;
     }
 }
 /*
