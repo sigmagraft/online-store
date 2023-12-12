@@ -1,3 +1,10 @@
-body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, dat {
+body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, dat, legend {
     font-family: Cabin !important;
+}
+.form-checklist-checkbox~.form-label::before,
+.form-checklist-checkbox~.form-label::after {
+    top: 1.3rem;
+}
+.shippingOptionLabel .shippingOption {
+    align-items: end;
 }
