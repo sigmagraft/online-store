@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form-input,
 .form-select,
-.form-checkbox+.form-label::before,
-.form-radio+.form-label::before {
+.form-checkbox + .form-label::before,
+.form-radio + .form-label::before {
     border-color: transparent;
 }
 .grid-bg {
@@ -67,7 +67,7 @@ Media Query
     .navPages-container {
         border-bottom-color: transparent;
     }
-    .navPages li.navPages-item:hover>.navPages-action:before {
+    .navPages li.navPages-item:hover > .navPages-action:before {
         bottom: 15px;
     }
     .navPage-subMenu {
@@ -291,7 +291,7 @@ Sidebar
 .sidebarBlock-heading {
     font-size: 1rem;
 }
-.sidebarBlock+.sidebarBlock {
+.sidebarBlock + .sidebarBlock {
     border-top-color: #ccc;
 }
 .navList-action--checkbox {
@@ -325,7 +325,7 @@ Media Query
     .page-sidebar #subcategoryList h5 {
         border-bottom-color: #ccc;
     }
-    .page-sidebar .accordion-block+.accordion-block {
+    .page-sidebar .accordion-block + .accordion-block {
         border-top-color: #ccc;
     }
 }
@@ -333,13 +333,13 @@ Media Query
     .grid-bg .sidebar-nav-mobile {
         background: transparent;
     }
-    .sidebar-nav-mobile>a:not(.is-open),
-    .sidebar-nav-mobile>a:not(.is-open):focus,
-    .sidebar-nav-mobile>a:not(.is-open):hover {
+    .sidebar-nav-mobile > a:not(.is-open),
+    .sidebar-nav-mobile > a:not(.is-open):focus,
+    .sidebar-nav-mobile > a:not(.is-open):hover {
         background: #fff;
         border-color: transparent;
     }
-    .sidebar-nav-mobile>a.is-open {
+    .sidebar-nav-mobile > a.is-open {
         color: #fff !important;
         border-color: transparent;
     }
@@ -354,8 +354,7 @@ INDIVIDUAL PRODUCT
 .productView-options {
     margin-bottom: 1.5rem;
 }
-.body > :not([data-product-id="166"]) .productView-options-wrap,
-[data-product-id="166"] .productView-options-inner > div:first-of-type {
+.productView-options-wrap {
     display: none !important;
 }
 .productView-options-wrap .productView-options-inner {
