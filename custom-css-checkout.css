@@ -1,9 +1,30 @@
 body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, legend, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, dat {
     font-family: Cabin !important;
 }
+.button:focus,
+.optimizedCheckout-form-input,
+.optimizedCheckout-form-input:focus,
+.optimizedCheckout-form-select,
+.optimizedCheckout-form-select:focus,
+.optimizedCheckout-form-select:hover {
+    box-shadow: none;
+}
+.dropdown-toggle--select:focus,
+.dropdown-toggle--select:hover {
+    border-color: inherit;
+}
 .form-checklist-checkbox~.form-label::before,
 .form-checklist-checkbox~.form-label::after {
     top: 1.3rem;
+}
+.form-field .floating-input,
+.form-field .floating-select {
+    background-color: #f9f9f9;
+}
+.form-field .floating-input:not(:focus),
+.form-field .floating-select:not(:focus),
+.form-field .floating-textarea {
+    border-color: #ddd;
 }
 .shippingOptionLabel .shippingOption {
     align-items: end;
