@@ -88,8 +88,18 @@ Media Query
 ------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------ */
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer-info {
+    display: none;
+}
 .footer-info-col {
-    font-size: .875rem;
+    font-size: 0.875rem;
+}
+.footer-info-list {
+    margin-bottom: 0;
 }
 .footer-info-list a:hover,
 footer a:hover {
@@ -98,6 +108,26 @@ footer a:hover {
 }
 footer .socialLinks-item {
     background: #196ab2;
+}
+.footer-copyright {
+    font-size: 0.75rem;
+    border-top: none;
+    padding-top: 0;
+}
+/*
+Media Query
+------------------------------------------------------------ */
+@media only screen and (min-width: 801px) {
+    .footer-info-list li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .footer-info-list {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 /*
 ------------------------------------------------------------
