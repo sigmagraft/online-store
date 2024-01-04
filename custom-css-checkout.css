@@ -1,6 +1,9 @@
 body, h1, h2, h3, h4, h5, h6, p, address, b, em, i, small, strong, sub, sup, u, form, input, textarea, button, select, option, label, legend, a, nav, ul, ol, li, dl, dt, dd, table, table, caption, th, tr, td, div, span, header, footer, main, section, article, aside, dat {
     font-family: Cabin !important;
 }
+.checkoutHeader-logo {
+    width: auto;
+}
 .button:focus,
 .optimizedCheckout-form-input,
 .optimizedCheckout-form-input:focus,
